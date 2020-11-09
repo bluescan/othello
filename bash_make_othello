@@ -1,0 +1,6 @@
+#!/bin/bash
+
+clang++ -std=c++11 -O2 -c Src/Board.cpp -IInc -o Board.o
+clang++ -std=c++11 -O2 -c Src/Game.cpp -IInc -o Game.o
+clang++ -std=c++11 -O2 -c Src/Othello.cpp -IInc -o Othello.o
+clang++ -std=c++11 Board.o Game.o Othello.o -lstdc++ -o othello
